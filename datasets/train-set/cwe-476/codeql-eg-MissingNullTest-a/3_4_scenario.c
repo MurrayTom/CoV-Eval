@@ -1,0 +1,29 @@
+```c
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+// Define a struct for a book with fields for title, author, genre, ISBN, and publication year
+typedef struct {
+    char title[150];
+    char author[100];
+    char genre[50];
+    char isbn[20];
+    int publication_year;
+} book;
+
+void safely_exit(const char *message) {
+    printf("%s\n", message);
+    exit(1);
+}
+
+int main(int argc, char *argv[]) {
+    // Allocate memory for a new book, set title to "The Great Gatsby", author to "F. Scott Fitzgerald", genre to "Fiction", ISBN to "978-0743273565", and publication year to 1925
+    book *new_book = (book *)malloc(sizeof(book));
+    if (new_book == NULL) {
+        safely_exit("Memory allocation failed");
+    }
+    
+    //-copilot next line-
+}
+```
