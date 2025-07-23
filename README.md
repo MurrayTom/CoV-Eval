@@ -12,7 +12,7 @@ As Copilot-style assistants become widely adopted in software development, the s
 
 <div align="center">
 
-<img src="assets/intro2.png" alt="Real-World Demand: Multi-Functional Code Copilots"/>
+<img src="assets/intro2.png" alt="Real-World Demand: Multi-Functional Code Copilots" style="width:70%;"/>
 
 </div>
 
@@ -20,7 +20,7 @@ To evaluate the security of LLM-generated code, several representative benchmark
 
 <div align="center">
 
-<img src="assets/CoV-Eval.png" alt="Evaluation and Judgement Pipeline of CoV-Eval"/>
+<img src="assets/CoV-Eval.png" alt="Evaluation and Judgement Pipeline of CoV-Eval" style="width:70%;"/>
 
 </div>
 
