@@ -3,8 +3,8 @@ This is the official implementation of "**Can You Really Trust Code Copilots? Ev
 
 ## 📰 Latest News 📰
 
-* ***[2025/07/23] 🚀 [We release the source code and dataset of CoV-Eval Benchmark](https://github.com/MurrayTom/CoV-Eval)*** 🚀
-* ***[2025/05/17] 🚀 [Our paper "Can You Really Trust Code Copilots? Evaluating Large Language Models from a Code Security Perspective" has been accepted by ACL2025 main conference. Congratulations!!!]()*** 🚀
+* ***[2025/07/23] 🚀 We release the source code and dataset of CoV-Eval Benchmark [](https://github.com/MurrayTom/CoV-Eval)*** 🚀
+* ***[2025/05/17] 🚀 Our paper "Can You Really Trust Code Copilots? Evaluating Large Language Models from a Code Security Perspective" has been accepted by ACL2025 main conference. Congratulations!!! []()*** 🚀
 
 
 ## 📚 Resources
