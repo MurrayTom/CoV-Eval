@@ -1,6 +1,12 @@
 # CoV-Eval (A comprehensive multi-task evaluation benchmark for LLM code security)
 This is the official implementation of "**Can You Really Trust Code Copilots? Evaluating Large Language Models from a Code Security Perspective**", accepted to the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025) Dataset & Benchmark Track
 
+## 📰 Latest News 📰
+
+* ***[2025/07/23] 🚀 [We release the source code and dataset of CoV-Eval Benchmark](https://github.com/MurrayTom/CoV-Eval)*** 🚀
+* ***[2025/05/17] 🚀 [Our paper "Can You Really Trust Code Copilots? Evaluating Large Language Models from a Code Security Perspective" has been accepted by ACL2025 main conference. Congratulations!!!]()*** 🚀
+
+
 ## 📚 Resources
 - **[Paper](https://aclanthology.org/2025.acl-long.849/):** Details the evaluation benchmark design and key experimental results.
 - **[Code](https://github.com/MurrayTom/CoV-Eval):** Details the source code and datasets.
