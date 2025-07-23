@@ -12,7 +12,7 @@ As Copilot-style assistants become widely adopted in software development, the s
 
 <div align="center">
 
-<img src="assets/intro2.png" alt="Real-World Demand: Multi-Functional Code Copilots" style="width:90%;"/>
+<img src="assets/intro2.png" alt="Real-World Demand: Multi-Functional Code Copilots"/>
 
 </div>
 
