@@ -11,5 +11,5 @@ CUDA_VISIBLE_DEVICES=1 python judge.py \
     --output_dir ./results \
     --judge_model_name gpt-4o \
     --judge_model_path gpt-4o \
-    --api_key sk-lyUkMdrohSuN3zFWjbUnJpeIowI17fRe9XqpazIBJ8HkFsxd \
-    --api_base https://aigcbest.top/v1
+    --api_key xxx \
+    --api_base xxx
