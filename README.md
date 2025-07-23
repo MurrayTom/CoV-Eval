@@ -16,7 +16,7 @@ As Copilot-style assistants become widely adopted in software development, the s
 
 </div>
 
-To evaluate the security of LLM-generated code, several representative benchmarks have been proposed, but they focus solely on code completion or generation, neglecting other essential tasks in real-world development. In actual software development, an ideal code copilot should automatically complete a series of tasks: Code Generation and Completion, Vulnerability Detection and Classification, Vulnerability Repair.
+To evaluate the security of LLM-generated code, several representative benchmarks have been proposed, but they focus solely on code completion or generation, neglecting other essential tasks in real-world development. In actual software development, an ideal code copilot should automatically complete a series of tasks: **Code Generation and Completion**, **Vulnerability Detection** and **Classification**, **Vulnerability Repair**.
 
 <div align="center">
 
@@ -24,7 +24,7 @@ To evaluate the security of LLM-generated code, several representative benchmark
 
 </div>
 
-This study proposes CoV-Eval, a multi-task benchmark for code security evaluation in large language models (LLMs). CoV-Eval covers diverse task types and a broad range of code security vulnerabilities. We evaluate various general LLMs and code LLMs from a security perspective, focusing on vulnerabilities in generated code as well as their capabilities in vulnerability detection, classification and repair.
+This study proposes **CoV-Eval**, a multi-task benchmark for **code security evaluation of large language models (LLMs)**. CoV-Eval covers diverse task types and a broad range of code security vulnerabilities. We evaluate various general LLMs and code LLMs from a security perspective, focusing on vulnerabilities in generated code as well as their capabilities in vulnerability detection, classification and repair.
 
 ## 📚 Resources
 - **[Paper](https://aclanthology.org/2025.acl-long.849/):** Details the evaluation benchmark design and key experimental results.
