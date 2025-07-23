@@ -29,8 +29,8 @@ CUDA_VISIBLE_DEVICES=1 python evaluation.py \
 ```
 ```
 CUDA_VISIBLE_DEVICES=1 python judge.py \
-    --task_type vulnerability_repair \
-    --model_name llama3.1-8b-instruct \
+    --task_type code_completion \
+    --model_name qwen2.5-7b-instruct \
     --eval_dir ./results/vulnerability_repair \
     --output_dir ./results \
     --judge_model_name gpt-4o \
@@ -41,33 +41,41 @@ CUDA_VISIBLE_DEVICES=1 python judge.py \
 
 ### Vulnerability Repair
 ```
-CUDA_VISIBLE_DEVICES=1 python main_test.py \
-     --model_name qwen2-7b-instruct \
-     --model_path /home/myt/Models/Qwen2-7B-Instruct \
-     --dataset_name SG-Bench \
-     --eval_task multiple_choice \
-     --attack
+CUDA_VISIBLE_DEVICES=1 python evaluation.py \
+    --task_type vulnerability_repair \
+    --model_name qwen2.5-7b-instruct \
+    --model_path /home/xxx/Models/Qwen2.5-7B-Instruct \
+    --save_dir ./results
 ```
-### Judgments
 ```
-CUDA_VISIBLE_DEVICES=1 python main_test.py \
-     --model_name qwen2-7b-instruct \
-     --model_path /home/myt/Models/Qwen2-7B-Instruct \
-     --dataset_name SG-Bench \
-     --eval_task safety_judgment \
-     --attack
+CUDA_VISIBLE_DEVICES=1 python judge.py \
+    --task_type vulnerability_repair \
+    --model_name qwen2.5-7b-instruct \
+    --eval_dir ./results/vulnerability_repair \
+    --output_dir ./results \
+    --judge_model_name gpt-4o \
+    --judge_model_path gpt-4o \
+    --api_key xxx \
+    --api_base xxx
 ```
 
-There are a few parameters to note here: When you need to perform LLM inference, set --attack; when you need to evaluate the LLM generated content, set --evaluation
+### Vulnerability Detection and Classification
+```
+CUDA_VISIBLE_DEVICES=1 python evaluation.py \
+    --task_type vulnerability_detection_and_classification \
+    --model_name qwen2.5-7b-instruct \
+    --model_path /home/xxx/Models/Qwen2.5-7B-Instruct \
+    --save_dir ./results
+```
 
 
 ## 🖊️ Citing Info
 
 ```bibtex
-@article{mou2024sg,
-  title={SG-Bench: Evaluating LLM Safety Generalization Across Diverse Tasks and Prompt Types},
+@article{mou2024cov,
+  title={Can You Really Trust Code Copilots? Evaluating Large Language Models from a Code Security Perspective},
   author={Mou, Yutao and Zhang, Shikun and Ye, Wei},
-  journal={arXiv preprint arXiv:2410.21965},
-  year={2024}
+  journal={arXiv preprint arXiv:2505.10494},
+  year={2025}
 }
 ```
