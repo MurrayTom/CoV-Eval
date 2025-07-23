@@ -29,6 +29,32 @@ This study proposes **CoV-Eval**, a multi-task benchmark for **code security eva
 ## 📚 Resources
 - **[Paper](https://aclanthology.org/2025.acl-long.849/):** Details the evaluation benchmark design and key experimental results.
 
+## 🗡️ Code Security Vulnerability Covered in CoV-Eval 🛡️
+
+We provide brief descriptions of 18 common software security vulnerability types, based on the [CWE Top 25 (2023)](https://cwe.mitre.org/top25/archive/2023/2023_top25_list.html).
+
+| CWE ID | Vulnerability Name | Description |
+|--------|--------------------|-------------|
+| **CWE-22** | Improper Limitation of a Pathname to a Restricted Directory (*Path Traversal*) | Occurs when input allows access to files outside of an intended directory via relative paths (e.g., `../`). |
+| **CWE-798** | Use of Hard-coded Credentials | Involves embedding credentials directly in source code, making them easily discoverable if the code is compromised. |
+| **CWE-787** | Out-of-Bounds Write | Happens when a program writes data outside the boundaries of allocated memory, possibly overwriting critical data. |
+| **CWE-732** | Incorrect Permission Assignment for Critical Resource | Occurs when improper permissions are granted to critical system resources, allowing unauthorized access. |
+| **CWE-476** | NULL Pointer Dereference | A crash or undefined behavior that results when a program dereferences a `null` pointer. |
+| **CWE-434** | Unrestricted Upload of File with Dangerous Type | Refers to insufficient validation during file uploads, allowing executable or malicious files to be uploaded. |
+| **CWE-190** | Integer Overflow or Wraparound | Happens when arithmetic operations exceed the range of the integer type, leading to incorrect or dangerous results. |
+| **CWE-125** | Out-of-Bounds Read | A vulnerability in which data is read past the end or before the beginning of a buffer, possibly revealing sensitive data. |
+| **CWE-78** | Improper Neutralization of Special Elements used in an OS Command (*OS Command Injection*) | Malicious input can alter the intended execution of system-level commands. |
+| **CWE-502** | Deserialization of Untrusted Data | Occurs when untrusted or malicious data is deserialized without validation, potentially leading to remote code execution. |
+| **CWE-79** | Improper Neutralization of Input During Web Page Generation (*Cross-site Scripting*) | Involves failure to sanitize user inputs, allowing attackers to inject scripts into web pages. |
+| **CWE-522** | Insufficiently Protected Credentials | Occurs when credentials are stored or transmitted insecurely, exposing them to unauthorized actors. |
+| **CWE-20** | Improper Input Validation | A general vulnerability involving insufficient validation of user-supplied input, potentially leading to code injection, buffer overflows, etc. |
+| **CWE-89** | SQL Injection: Improper Neutralization of Special Elements | Occurs when attackers can inject malicious SQL commands into queries due to insufficient input sanitization. |
+| **CWE-200** | Exposure of Sensitive Information to an Unauthorized Actor | Involves unintended disclosure of sensitive information to entities not authorized to receive it. |
+| **CWE-119** | Improper Restriction of Operations within the Bounds of a Memory Buffer | A broad category covering buffer overflows and underflows due to mismanagement of memory access. |
+| **CWE-416** | Use After Free | Happens when memory that has already been freed is accessed, potentially leading to crashes or arbitrary code execution. |
+| **CWE-306** | Insufficient Processing of Invalid or Unintended Input | Refers to the failure to handle invalid or unexpected input correctly, often leading to broader vulnerabilities. |
+
+
 ## Contents
 - [Install](#install)
 - [Usage](#Usage)
