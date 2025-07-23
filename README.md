@@ -1,4 +1,4 @@
-# SG-Bench
+# CoV-Eval (A comprehensive multi-task evaluation benchmark for LLM code security)
 This is the official implementation of "**Can You Really Trust Code Copilots? Evaluating Large Language Models from a Code Security Perspective**", accepted to the 63rd Annual Meeting of the Association for Computational Linguistics (ACL 2025) Dataset & Benchmark Track
 
 This study proposes CoV-Eval, a multi-task benchmark for code security evaluation in large language models (LLMs). CoV-Eval covers diverse task types and a broad range of code security vulnerabilities. We evaluate various general LLMs and code LLMs from a security perspective, focusing on vulnerabilities in generated code as well as their capabilities in vulnerability detection, classification and repair.
